@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/style.css">\
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <title>Starry Sky Facts</title>
+</head>
+<body>
+
+<!-- fixed bottom anim -->
+<div class="sprite1 right"></div>
+<div class="earth"><img src="images/earth_loop.gif"></div>
+<!-- fixed bottom anim end -->
+
+
+<div id="home" class="home">
+    <video autoplay muted id="background-facts">
+        <source src="videos/home-vid.mp4" type="video/mp4">
+    </video>
+
+        <a href="#fact-one" title="Let's Start!">
+            <div class="arrow-fix-special">
+                <div class="arrowDown" data-anijs="if: onRunFinished, on: $AniJSNotifier, do: bounce animated infinite">
+                    <span class="material-icons" style="font-size: 60px;">expand_circle_down</span>
+                </div>
+            </div>
+        </a>
+
+    <div class="text-fix">
+        <h1 class="titleDesc" data-anijs="if: onRunFinished, on: $AniJSNotifier, do: fadeInDown animated">
+            Starry Sky Facts
+        </h1>
+
+        <span class="animate__animated animate__fadeInDown animate__delay-1s">
+            <div class="homeDesc">
+                Every day we see stars twinkle up on the night sky, but have you ever stopped to think what secrets they possibly hold?<br><br><b>Let's Start!</b>
+            </div>
+        </span>
+    </div>
+</div>
+
+
+<div id="fact-one" class="fact-one">
+    <video autoplay muted id="background-facts">
+        <source src="videos/fact-one-vid.mp4" type="video/mp4">
+    </video>
+
+    <a href="#" title="Go Back">
+        <div class="arrow-fix2" data-anijs="if: mouseover, do: bounce animated">
+            <div class="arrowUp rotateHover">
+                <span class="material-icons" style="font-size: 80px;">keyboard_arrow_up</span>
+            </div>
+        </div>
+    </a>
+
+    <a href="#fact-two" title="Next Fact">
+        <div class="arrow-fix" data-anijs="if: mouseover, do: bounce animated">
+            <div class="arrowDown rotateHover">
+                <span class="material-icons" style="font-size: 80px;">keyboard_arrow_down</span>
+            </div>
+        </div>
+    </a>
+
+    <div class="fo-desc-fix">
+        <div class="descTitle descHover" data-anijs="if: scroll, on: window, do: fadeInDown animated">
+            Looking at stars also means you're looking at history
+        </div>
+
+        <div class="descOne" data-anijs="if: scroll, on: window, do: flipInX animated">
+            <div class="fo-s1">
+                An average of 9,096 stars are visible up in the sky every night...
+            </div>
+        </div>
+
+        <div class="descTwo" style="margin-top: 100px;" data-anijs="if: scroll, on: window, do: flipInX animated">
+            <div class="fo-s1">
+                ...and all of them take millions of years before their light is visible to our eyes...
+            </div>
+        </div>
+
+        <div class="descThree" data-anijs="if: scroll, on: window, do: flipInX animated">
+            <div class="fo-s1">
+            ...which means the stars you're seeing every night are stars from hundreds of thousands of years ago.
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="fact-two" class="fact-two">
+    <video autoplay muted id="background-facts">
+        <source src="videos/fact-two-vid.mp4" type="video/mp4">
+    </video>
+
+    <a href="#fact-one" title="Previous Fact">
+        <div class="arrow-fix2" data-anijs="if: mouseover, do: bounce animated">
+            <div class="arrowUp rotateHover">
+                <span class="material-icons" style="font-size: 80px;">keyboard_arrow_up</span>
+            </div>
+        </div>
+    </a>
+
+    <a href="#fact-three" title="Next Fact">
+        <div class="arrow-fix" data-anijs="if: mouseover, do: bounce animated">
+            <div class="arrowDown rotateHover">
+                <span class="material-icons" style="font-size: 80px;">keyboard_arrow_down</span>
+            </div>
+        </div>
+    </a>
+
+    <div class="fo-desc-fix">
+        <div class="descTitle descHover" data-anijs="if: scroll, on: window, do: fadeInDown animated">
+            Most stars are bigger and brighter than our sun
+        </div>
+
+        <div class="descOne ft-s2" style="width: 250px; margin-left: 350px;" data-anijs="if: scroll, on: window, do: zoomInLeft animated">
+            Even though the sun is the closest star to earth,
+        </div>
+
+        <div class="descTwo ft-s1" style="width: 300px; text-align: right; margin-top: 200px; margin-right: 250px;" data-anijs="if: scroll, on: window, do: zoomInRight animated">
+            The fastest spacecraft we have will take 70,000 years before it reaches it.
+        </div>
+    </div>
+</div>
+
+<div id="fact-three" class="fact-three">
+    <video autoplay muted id="background-facts">
+        <source src="videos/fact-three-vid.mp4" type="video/mp4">
+    </video>
+
+    <a href="#fact-two" title="Previous Fact">
+        <div class="arrow-fix2" data-anijs="if: mouseover, do: bounce animated">
+            <div class="arrowUp rotateHover">
+                <span class="material-icons" style="font-size: 80px;">keyboard_arrow_up</span>
+            </div>
+        </div>
+    </a>
+
+    <a href="#fact-four" title="Next Fact">
+        <div class="arrow-fix" data-anijs="if: mouseover, do: bounce animated">
+            <div class="arrowDown rotateHover">
+                <span class="material-icons" style="font-size: 80px;">keyboard_arrow_down</span>
+            </div>
+        </div>
+    </a>
+
+
+    <div class="fo-desc-fix">
+        <div class="descTitle descHover" data-anijs="if: scroll, on: window, do: fadeInDown animated">
+            Our stars come in different colors
+        </div>
+
+        <div class="descOne fth-s1" style="margin-left: 300px;" data-anijs="if: scroll, on: window, do: rotateInDownLeft animated">
+            Blue stars are the hottest. Red is the coldest...
+        </div>
+
+        <div class="descThree fth-s2" style="margin-left: 700px;" data-anijs="if: scroll, on: window, do: rotateInDownRight animated">
+            ...and there are no green stars
+        </div>
+    </div>
+</div>
+
+<div id="fact-four" class="fact-four">
+    <video autoplay muted id="background-facts">
+        <source src="videos/fact-four-vid.mp4" type="video/mp4">
+    </video>
+
+    <a href="#fact-three" title="Previous Fact">
+        <div class="arrow-fix2" data-anijs="if: mouseover, do: bounce animated">
+            <div class="arrowUp rotateHover">
+                <span class="material-icons" style="font-size: 80px;">keyboard_arrow_up</span>
+            </div>
+        </div>
+    </a>
+
+    <a href="#fact-five" title="Next Fact">
+        <div class="arrow-fix" data-anijs="if: mouseover, do: bounce animated">
+            <div class="arrowDown rotateHover">
+                <span class="material-icons" style="font-size: 80px;">keyboard_arrow_down</span>
+            </div>
+        </div>
+    </a>
+
+
+    <div class="fo-desc-fix">
+        <div class="descTitle descHover" data-anijs="if: scroll, on: window, do: lightSpeedIn animated">
+            Shooting Stars Are Actually Meteors
+        </div>
+    </div>
+</div>
+
+<div id="fact-five" class="fact-five">
+    <video autoplay muted id="background-facts">
+        <source src="videos/fact-five-vid.mp4" type="video/mp4">
+    </video>
+
+    <a href="#fact-four" title="Previous Fact">
+        <div class="arrow-fix2" data-anijs="if: mouseover, do: bounce animated">
+            <div class="arrowUp rotateHover">
+                <span class="material-icons" style="font-size: 80px;">keyboard_arrow_up</span>
+            </div>
+        </div>
+    </a>
+
+    <a href="#" title="Restart">
+        <div class="arrow-fix-last">
+            <div class="arrowDown rotateHover">
+                <span class="material-icons" style="font-size: 60px;">replay</span>
+            </div>
+        </div>
+    </a>
+
+    <a title="Submit a Fact!" data-anijs="if: click, do: $addClass open, to:.modal; if: click, on: .close, do: $removeClass open, to: $closest target | .modal">
+        <div class="chat-fix" data-anijs="if: mouseover, do: pulse animated infinite; if: mouseout, do: pulse animated">
+            <div class="arrowDown">
+                <span class="material-icons" style="font-size: 60px;">chat</span>
+            </div>
+        </div>
+    </a>
+
+
+    <div class="fo-desc-fix">
+        <div class="descTitle descHover" data-anijs="if: scroll, on: window, do: fadeInDown animated">
+            You're probably seeing a Red Dwarf
+        </div>
+
+        <div class="descOne ffi-s1" data-anijs="if: scroll, on: window, do: zoomIn animated">
+            The Red Dwarf is the most common type of star in the sky...
+        </div>
+
+        <div class="descTwo ffi-s2" style="margin-top: 150px;" data-anijs="if: scroll, on: window, do: zoomInDown animated">
+            ...so if you're looking up at night, you're likely to be seeing one!
+        </div>
+    </div>
+
+<!-- Modal -->
+    <div class="modal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3>Submit A Fact!</h3>
+                <a class="btn-close close" aria-hidden="true">×</a>
+            </div>
+
+            <div class="modal-body">
+                <label for="name">Name:</label>
+                <input type="text" value="Juan Dela Cruz">
+                <label for="email">Email:</label>
+                <input type="text" value="j.delacruz@example.com">
+                <br><br>
+                <label for="email">Share your own Starry Fun Fact:</label>
+                <textarea>Start typing here...</textarea>
+            </div>
+            
+            <center>
+            <a href="#">
+            <button href="#modal" data-anijs="if: click, do: $removeClass open, to: .modal; if: click, on: .close, do: $removeClass open, to: $closest target | .modal">
+                Submit!
+            </button>
+            </a>
+            </center>
+        </div>
+    </div>
+<!-- /Modal -->
+</div>
+
+
+<div class="footer">
+    &copy; 2022 All Rights Reserved. Created by Mara Salomon for Educational Purposes Only. Sources referenced: <a href="http://yogamamabear.com/downward-facing-blog/7-amazing-facts-about-the-sky" target="_blank">YohaMamaBear</a>, <a href="https://www.astronomytrek.com/top-10-facts-about-the-stars/" target="_blank">AstronomyTrek</a>, <a href="https://blog.mystart.com/10-interesting-facts-about-the-night-sky/" target="_blank">MyStart</a>.
+</div>
+
+
+
+
+<!----------------------- SCRIPT ----------------------->
+<script src="anijs-min.js"></script>
+<script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script> 
+<script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
+
+<script>
+window.addEventListener('load', videoScroll);
+window.addEventListener('scroll', videoScroll);
+
+function videoScroll() {
+
+  if ( document.querySelectorAll('video[autoplay]').length > 0) {
+    var windowHeight = window.innerHeight,
+        videoEl = document.querySelectorAll('video[autoplay]');
+
+    for (var i = 0; i < videoEl.length; i++) {
+
+      var thisVideoEl = videoEl[i],
+          videoHeight = thisVideoEl.clientHeight,
+          videoClientRect = thisVideoEl.getBoundingClientRect().top;
+
+      if ( videoClientRect <= ( (windowHeight) - (videoHeight*.5) ) && videoClientRect >= ( 0 - ( videoHeight*.5 ) ) ) {
+        thisVideoEl.play();
+      } else {
+        thisVideoEl.currentTime = 0;
+      }
+
+    }
+  }
+
+}
+
+</script>
+<!----------------------- SCRIPT END ----------------------->
+</body>
+</html>

@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=Solway:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+	background-color: #323871;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+a {
+    color: #ffffff;
+}
+
+.arrow-fix {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 200px;
+    margin-right: 100px;
+    z-index: 90;
+}
+
+.arrow-fix-special {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 345px;
+    width: 55px;
+    z-index: 90;
+}
+
+.arrow-fix2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 50px;
+    margin-right: 100px;
+    z-index: 90;
+}
+
+.arrow-fix-last {
+    margin-bottom: 200px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 100px;
+    z-index: 90;
+}
+
+.chat-fix {
+    margin-bottom: 200px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-left: 75px;
+    z-index: 90;
+}
+
+.arrowDown {
+    color: #f7cecf;
+    transition: 0.3s;
+}
+
+.arrowDown:hover {
+    color: #f39cad;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.rotateHover {
+    animation: fadeIn 3s;
+}
+
+.rotateHover:hover {
+    transform: rotate(360deg);
+    transition: .5s;
+}
+
+.arrowUp {
+    color: #f7cecf;
+    transition: 0.3s;
+}
+
+.arrowUp:hover {
+    color: #f39cad;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#home {
+    background-color: #323871;
+    height: 100%;
+    overflow: hidden;
+}
+
+#background-facts {
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+#fact-one, #fact-two, #fact-three, #fact-four, #fact-five {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.fact-one, .fact-two, .fact-three, .fact-four, .fact-five {
+    margin: 0;
+    padding: 0;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    background-color: #1a1b44;
+    color: #ffffff;
+    width: 100%;
+    padding: 5px 0px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 10px;
+    z-index: 99;
+}
+
+
+/* ------------------- DESCRIPTIONS --------------------- */
+.text-fix {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    width: 500px;
+    z-index: 10;
+}
+
+.titleDesc {
+    color: #f7cecf;
+    font-family: 'Solway', serif;
+    font-size: 55px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.homeDesc {
+    text-align: center;
+    color: #f7cecf;
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 30px;
+}
+
+.fo-desc-fix {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    width: auto;
+}
+
+.descTitle {
+    font-family: 'Solway', serif;
+    color: #f7cecf;
+    z-index: 5;
+    top: 0;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+    transition: .5s;
+
+    animation-name: titleAnimation;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+}
+
+.descOne {
+    color: #f7cecf;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+    margin-left: 150px;
+    margin-top: 65px;
+    position: absolute;
+
+    animation-name: fadeUp;
+    animation-delay: 3s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+}
+
+.descTwo {
+    position: absolute;
+    color: #f7cecf;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+    right:0;
+    margin-right: 0;
+    margin-right: 200px;
+    margin-top: 65px;
+
+    animation-name: fadeUp;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+}
+
+.descThree {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 500px;
+    color: #f7cecf;
+    font-family: 'Noto Sans', sans-serif;
+    margin-top: 200px;
+
+    animation-name: fadeUp;
+    animation-delay: 5s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+}
+
+.descOne, .descTwo, .descThree {
+    line-height: 25px;
+}
+
+.descHover:hover {
+    font-size: 34px;
+    transition: .5s;
+    cursor: default;
+}
+
+.fo-s1 {
+    transition: 1s;
+}
+
+.fo-s1:hover {
+    animation-name: homeTitleAnimation;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    font-style: italic;
+}
+
+.ft-s1 {
+    transition: 1s;
+}
+
+.ft-s1:hover {
+    color: #ff815c;
+    letter-spacing: .5px;
+    transition: .5s;
+}
+
+.ft-s2 {
+    transition: 1s;
+}
+
+.ft-s2:hover {
+    color: #ffa85b;
+    letter-spacing: .5px;
+    transition: .5s;
+}
+
+.fth-s1 {
+    transition: 1s;
+}
+
+.fth-s1:hover {
+    color: #6eb1d4;
+    letter-spacing: .5px;
+    transition: .5s;
+}
+
+.fth-s2 {
+    transition: 1s;
+}
+
+.fth-s2:hover {
+    color: #77c46b;
+    letter-spacing: .5px;
+    transition: .5s;
+}
+
+.ffi-s1 {
+    transition: 1s;
+}
+
+.ffi-s1:hover {
+    color: #d6726e;
+    letter-spacing: .5px;
+    transition: .5s;
+}
+
+.ffi-s2 {
+    transition: 1s;
+}
+
+.ffi-s2:hover {
+    letter-spacing: .5px;
+    font-weight: 700;
+    font-style: italic;
+    transition: .5s;
+}
+
+
+
+/* ------------------- ANIMATIONS -------------------- */
+.sprite1{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    margin-bottom: 200px;
+    z-index: 50;
+	max-width: 163px; /* width only of the frame */
+	height: 261px;
+    background-image: url(../images/walkRightNew.png);
+	animation: walk1 1.3s  steps(7) infinite;
+}
+
+.right{
+	background-image: url(../images/walkRightNew.png);
+}
+
+.earth {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: -355px;
+    text-align: center;
+    z-index: 49;
+}
+
+.earth img {
+    width: 600px;
+}
+
+
+
+/*----------------- SCROLLBAR -----------------*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #23285d; 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #f7cecf; 
+    transition: .3s;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #f39cad; 
+    transition: .3s;
+}
+
+
+
+
+
+/* ---------------- KEYFRAMES ------------------ */
+@keyframes walk1{
+	from{ 
+		background-position: 0px;
+		transform:translate(0%); 
+	}
+
+	to{ 
+		background-position: -1152px; /* width of the entire spritesheet image */
+		transform:translate(0%);
+	}
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+
+
+
+  /* ---------------- MODAL ------------------ */
+  .wrap {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    background: #428bca;
+    border: #357ebd solid 1px;
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    padding: 8px 15px;
+    text-decoration: none;
+    text-align: center;
+    min-width: 60px;
+    position: relative;
+    transition: color .1s ease;
+  }
+  
+  .btn:hover {
+    background: #357ebd;
+  }
+  
+  .btn.btn-big {
+    font-size: 18px;
+    padding: 15px 20px;
+    min-width: 100px;
+  }
+  
+  .btn-close {
+    color: #f7cecf;
+    font-size: 30px;
+    text-decoration: none;
+    position: absolute;
+    cursor: pointer;
+    right: 15px;
+    top: 0;
+  }
+  
+  .btn-close:hover {
+    color: #f39cad;
+  }
+  
+  .modal:before {
+    content: "";
+    display: none;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+  }
+  
+  .modal.open .modal-dialog {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    top: 15%;
+  }
+  
+  .modal.open:before {
+    display: block;
+  }
+  
+  .modal-dialog {
+    background: #323871;
+    border: #1a1b44 solid 1px;
+    color: #f7cecf;
+    font-family: 'Noto Sans', sans-serif;
+    border-radius: 10px;
+    margin-left: -200px;
+    position: fixed;
+    padding: 10px;
+    left: 50%;
+    top: -100%;
+    z-index: 99;
+    width: 450px;
+    -webkit-transform: translate(0, -500%);
+    -ms-transform: translate(0, -500%);
+    transform: translate(0, -500%);
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    -moz-transition: -moz-transform 0.3s ease-out;
+    -o-transition: -o-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+  }
+  .modal-body {
+    padding: 20px;
+    margin-top: -25px;
+  }
+  .modal-header,
+  .modal-footer {
+    padding: 10px 20px;
+  }
+  .modal-footer {
+    border-top: #eeeeee solid 1px;
+    text-align: right;
+  }
+  .modal-dialog h3 {
+    text-align: center;
+    font-family: 'Solway', serif;
+    font-size: 30px;
+  }
+
+
+/* ---------------- MODAL FORM ------------------ */
+
+label {
+    color: #f7cecf;
+    font-weight: bold;
+    font-family: 'Noto Sans', sans-serif;
+    margin-right: 15px;
+}
+
+input[type=text] {
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #ffffff;
+    color: #323871;
+    width: 100%;
+}
+
+textarea {
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #ffffff;
+    color: #323871;
+    width: 100%;
+    height: 200px;
+    font-family: sans-serif;
+}
+
+button {
+    cursor: pointer;
+    width: 410px;
+    height: 40px;
+    background-color: #f7cecf;
+    color: #323871;
+    border: 0;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: .3s;
+    margin-bottom: 25px;
+    margin-top: -10px;
+}
+
+button:hover {
+    background-color: #f39cad;
+    transition: .5s;
+}
